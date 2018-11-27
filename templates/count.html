@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Count</title>
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <td><h3><a href="{% url 'home' %}"> Home | </a></h3></td>
+    <td><h3><a href="{% url 'About' %}"> About </a></h3></td>
+</table>
+
+<h1>Your Text</h1><h3 style="color: red">{{ message }}</h3>
+
+<table>
+    <h1>Words Count</h1>
+    <h3>Length of your text is: {{ len }} </h3>
+    {% for x,y in dict %}
+    <tr>
+        <td>{{ x }}</td>
+        <td>{{ y }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About-us</title>
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <td><h3><a href="{% url 'home' %}"> Home | </a></h3></td>
+    <td><h3><a href="{% url 'About' %}"> About </a></h3></td>
+</table>
+<img src="{% static 'images/image1.jpg' %}" alt="image" height="200" width="200"/>
+<h4>
+    Ajay Kumar,
+    Product Manager
+    Hello! I’m Abby, and I’m a product manager with a background in design and development.<br>
+    I’m excited about helping others find their way into the field of design and technology.<br>
+    In my free time I’m an outdoors enthusiast and an ice cream connoisseur.<br>
+</h4>
+    Skills
+		<ul>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>Adobe Dreamweaver</li>
+		</ul>
+	Education
+		<ul>
+			<li>Orange High School</li>
+			<li>University of Virginia</li>
+		</ul>
+	Hobbies
+		<ul>
+			<li>Ultimate Frisbee</li>
+			<li>Olympic Weightlifting</li>
+			<li>Sewing</li>
+			<li>Traveling</li>
+		</ul>
+		<!-- Social Media Links -->
+		<a href="http://www.twitter.com/abbylarner">Twitter</a>
+		<a href="http://www.dribbble.com/abbylarner">Dribbble</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <td><h3><a href="{% url 'home' %}"> Home | </a></h3></td>
+    <td><h3><a href="{% url 'About' %}"> About </a></h3></td>
+</table>
+<form action="{% url 'count' %}" method="post">
+    {% csrf_token %}
+    <h1>Enter your comments here</h1>
+
+    <textarea name="comments" id="" cols="30" rows="10">
+
+    </textarea>
+    <br>
+    <input type="submit" value="Count">
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
